@@ -99,7 +99,7 @@ export default function DisplayAllBooks({ books, setBooks }) {
                         />
                       </Link>
                       <Link to={`/books/deletebook/${book._id}`}>
-                        <MdOutlineDelete
+                        <MdOutlineDelete onClick={() => confirm("Are you sure to delete this book")}
                           className="text-2xl text-red-600"
                           title="Delete"
                         />
